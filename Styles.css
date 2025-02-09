@@ -1,0 +1,127 @@
+/* تنسيق عام للصفحة */
+body {
+    font-family: 'Tajawal', Arial, sans-serif; /* خط عربي مناسب */
+    direction: rtl; /* الاتجاه من اليمين إلى اليسار */
+    text-align: right; /* محاذاة النص لليمين */
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+/* عنوان الصفحة */
+h1 {
+    color: #0056b3;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* تنسيق النموذج */
+form {
+    margin: 20px auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+input, button {
+    padding: 10px;
+    margin: 5px;
+    font-size: 16px;
+    width: 100%;
+}
+
+button {
+    background: #0056b3;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #003d82;
+}
+
+/* تنسيق الجدول */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: white;
+    direction: rtl;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: right;
+    font-weight: bold;
+}
+
+th {
+    background: #0056b3;
+    color: white;
+}
+
+/* تنسيق الفوتر */
+footer {
+    margin-top: 20px;
+    font-size: 14px;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* تنسيق خاص للطباعة */
+@media print {
+    body {
+        direction: rtl;
+        text-align: center;
+        font-family: 'Tajawal', Arial, sans-serif;
+        background: white;
+    }
+
+    h2 {
+        color: #0056b3;
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    table {
+        width: 80%;
+        margin: auto;
+        border-collapse: collapse;
+        border: 2px solid black;
+    }
+
+    th, td {
+        border: 1px solid black;
+        padding: 10px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    th {
+        background: #0056b3;
+        color: white;
+    }
+
+    td {
+        color: black;
+    }
+
+    input[type="checkbox"] {
+        display: none; /* إخفاء الـ Checkbox عند الطباعة */
+    }
+
+    .footer {
+        margin-top: 20px;
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    .footer p {
+        margin: 5px 0;
+    }
+}
